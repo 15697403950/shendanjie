@@ -394,12 +394,12 @@
   let resultWord = document.querySelector('.result-word')
 
   btn.addEventListener('click', function() {
-    let answer = "卯咪我喜歡你"
+    let answer = "我喜歡你"
     let str = input.value.toString()
     let word = unescape(str.replace(/\\u/g, '%u')).toString()
     result.innerText = `轉換結果=> ${word}`
     result.classList.remove('disable-word')
-    if (word == "卯咪我喜歡妳" || word == "我喜歡妳" || word == "喜歡妳" || word == answer) {
+    if (word == "我喜歡妳" || word == "我喜歡妳" || word == "喜歡妳" || word == answer) {
       console.log('aaaaaaa');
       heartIcon.classList.remove('disable-image')
       resultWord.style.color = "black"
